@@ -32,7 +32,7 @@ This is my project for parsing Telegram channels and chats and processing receiv
      ```
    - on Linux/macOS/other Unix-like OS: 
      ```
-     source bin/activate
+     source ./bin/activate
      ```
 5. Install dependencies:
    - on Windows: 
@@ -43,7 +43,20 @@ This is my project for parsing Telegram channels and chats and processing receiv
      ```
      pip3 install -r ./requirements.txt
      ```
-6. Get your own Telegram API token <a href='https://core.telegram.org/api#getting-started'>here</a>
+6. You can use setup scripts:
+   - on Windows: 
+     ```
+     .\setup.cmd
+     ```
+     or
+     ```
+     .\setup.bat
+     ```
+   - on Linux/macOS/other Unix-like OS: 
+     ```
+     ./setup.sh
+     ```
+7. Get your own Telegram API token <a href='https://core.telegram.org/api#getting-started'>here</a>
 
 ### How to use
 0. Make sure that:
