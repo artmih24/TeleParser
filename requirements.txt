@@ -1,0 +1,6 @@
+pymorphy3
+pandas
+nltk
+pymongo
+telethon
+setuptools

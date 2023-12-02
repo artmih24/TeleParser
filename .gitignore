@@ -1,0 +1,10 @@
+**/Include/
+**/Lib/
+**/Scripts/
+**/.idea/
+**/*.session*
+**/config.ini
+**/*.csv
+**/*.json
+**/pyvenv.cfg
+

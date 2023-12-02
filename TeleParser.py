@@ -3,7 +3,7 @@ import configparser
 import json
 import pandas as pd
 import os
-import pymorphy2
+import pymorphy3
 import nltk
 from nltk.stem import WordNetLemmatizer 
 import csv
@@ -120,7 +120,6 @@ cls()
 
 # парсинг чата или канала в Telegram и сохранение в JSON-файл
 url = 't.me/' + input("Введите ссылку на канал или чат: @")
-#url = 't.me/testflight_app'
 channel_string = url.split('/')[-1]
 print(f'{str(datetime.now())} | Парсинг начат')
 datetime_string = str(datetime.now()).replace("-", "").replace(" ", "T").replace(":", "").split(".")[0]
@@ -171,7 +170,7 @@ print(f'{str(datetime.now())} | Удаление лишних столбцов �
 
 # леммирование текста
 print(f'{str(datetime.now())} | Леммирование текста')
-morph = pymorphy2.MorphAnalyzer()
+morph = pymorphy3.MorphAnalyzer()
 data = []
 with open(f'{channel_string}_messages_{datetime_string}.csv', 'r', encoding='utf-8', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
