@@ -63,10 +63,17 @@ This is my project for parsing Telegram channels and chats and processing receiv
    - You have received Your Telegram API token
    - And You have replaced contents in `config.ini` file by your Telegram API token
 1. Launch this script:
-   - on Windows: `python .\TeleParser.py`
-   - on Linux/macOS/other Unix-like OS: `python3 ./TeleParser.py`
+   - on Windows: 
+     ```
+     python .\TeleParser.py
+     ```
+   - on Linux/macOS/other Unix-like OS: 
+     ```
+     python3 ./TeleParser.py
+     ```
+   - You can write channel or chat name (written after '@' or `t.me/`/`https://t.me/`) as command-line argument
 2. Login in Telegram if You weren't logged in (trust me, this script doesn't steal your Telegram token, login and password)
-3. Enter channel or chat name (written after '@' or `t.me/`/`https://t.me/`) and press Enter key
+3. If You haven't written channel or chat name as command-line argument, enter channel or chat name (written after '@' or `t.me/`/`https://t.me/`) and press Enter key
 4. Wait until this script will parse and process al data and press Enter key
 5. You can view all `.json` and `.csv` files with received data and view all data in MongoDB database
 

@@ -119,7 +119,10 @@ cls = lambda: os.system('cls')
 cls()
 
 # парсинг чата или канала в Telegram и сохранение в JSON-файл
-url = 't.me/' + input("Введите ссылку на канал или чат: @")
+if len(sys.argv) == 1:
+	url = 't.me/' + sys.argv[1]
+else:
+	url = 't.me/' + input("Введите ссылку на канал или чат: @")
 channel_string = url.split('/')[-1]
 print(f'{str(datetime.now())} | Парсинг начат')
 datetime_string = str(datetime.now()).replace("-", "").replace(" ", "T").replace(":", "").split(".")[0]
