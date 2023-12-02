@@ -53,7 +53,16 @@ client = TelegramClient(username, api_id, api_hash)
 
 client.start()
 
-async def dump_all_participants(channel):
+class DateTimeEncoder(json.JSONEncoder):
+    '''Класс для сериализации записи дат в JSON'''
+    def default(self, o):
+        if isinstance(o, datetime):
+            return o.isoformat()
+        if isinstance(o, bytes):
+            return list(o)
+        return json.JSONEncoder.default(self, o)
+
+async def dump_all_participants(channel, short_url_, datetime_):
     """Записывает json-файл с информацией о всех участниках канала/чата"""
     offset_user = 0    # номер участника, с которого начинается считывание
     limit_user = 100   # максимальное число записей, передаваемых за один раз
@@ -68,6 +77,10 @@ async def dump_all_participants(channel):
             break
         all_participants.extend(participants.users)
         offset_user += len(participants.users)
+        print(f'{str(datetime.now())} | Получено записей: {len(all_participants)}', end='\r')
+
+    with open(f'{short_url_}_participants_{datetime_}.json', 'w', encoding='utf8') as outfile:
+        json.dump(all_participants, outfile, ensure_ascii=False, cls=DateTimeEncoder)
 
 
 async def dump_all_messages(channel, short_url_, datetime_):
@@ -78,15 +91,6 @@ async def dump_all_messages(channel, short_url_, datetime_):
     all_messages = []   # список всех сообщений
     total_messages = 0
     total_count_limit = 0  # поменяйте это значение, если вам нужны не все сообщения
-
-    class DateTimeEncoder(json.JSONEncoder):
-        '''Класс для сериализации записи дат в JSON'''
-        def default(self, o):
-            if isinstance(o, datetime):
-                return o.isoformat()
-            if isinstance(o, bytes):
-                return list(o)
-            return json.JSONEncoder.default(self, o)
 
     while True:
         history = await client(GetHistoryRequest(
@@ -112,7 +116,7 @@ async def dump_all_messages(channel, short_url_, datetime_):
 
 async def main():
     channel = await client.get_entity(url)
-    #await dump_all_participants(channel)
+    await dump_all_participants(channel, channel_string, datetime_string)
     await dump_all_messages(channel, channel_string, datetime_string)
 
 # загрузка необходимых компонентов
