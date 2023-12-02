@@ -1,0 +1,11 @@
+:<<BATCH
+    @rem section for batch/cmd script
+    @echo off
+    .\setup.bat
+    exit /b
+    @rem end of section for batch/cmd script
+BATCH
+
+# section for shell script
+./setup.sh
+# end of section for shell script
