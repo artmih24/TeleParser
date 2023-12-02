@@ -1,4 +1,5 @@
 pymorphy3
+pymorphy2
 pandas
 nltk
 pymongo

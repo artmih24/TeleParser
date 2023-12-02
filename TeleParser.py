@@ -1,13 +1,16 @@
 # импорт библиотек
-import configparser
-import json
-import pandas as pd
 import os
-import pymorphy3
-import nltk
-from nltk.stem import WordNetLemmatizer 
-import csv
 import sys
+import json
+import csv
+import configparser
+import pandas as pd
+if sys.version_info.minor >= 12:
+	import pymorphy3
+else:
+	import pymorphy2
+import nltk
+from nltk.stem import WordNetLemmatizer
 from math import *
 from pymongo import MongoClient
 
@@ -173,7 +176,10 @@ print(f'{str(datetime.now())} | Удаление лишних столбцов �
 
 # леммирование текста
 print(f'{str(datetime.now())} | Леммирование текста')
-morph = pymorphy3.MorphAnalyzer()
+if sys.version_info.minor >= 12:
+	morph = pymorphy3.MorphAnalyzer()
+else:
+	morph = pymorphy2.MorphAnalyzer()
 data = []
 with open(f'{channel_string}_messages_{datetime_string}.csv', 'r', encoding='utf-8', newline='') as csvfile:
     reader = csv.DictReader(csvfile)

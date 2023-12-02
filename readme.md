@@ -3,7 +3,7 @@
 This is my project for parsing Telegram channels and chats and processing received data
 
 ### Requirements
-1. Python `3.12.0` (CPython)
+1. Python `3.12.0` or earlier (CPython)
 2. MongoDB
 3. Your Telegram API token, learn more <a href='https://core.telegram.org/api#getting-started'>here</a>
 
