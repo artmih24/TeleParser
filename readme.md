@@ -8,17 +8,41 @@ This is my project for parsing Telegram channels and chats and processing receiv
 3. Your Telegram API token, learn more <a href='https://core.telegram.org/api#getting-started'>here</a>
 
 ### Get started
-1. Run <i>git clone</i>: `git clone https://github.com/artmih24/TeleParser.git`
-2. Go to project directory: `cd TeleParser`
+1. Run <i>git clone</i>: 
+   ```
+   git clone https://github.com/artmih24/TeleParser.git
+   ```
+2. Go to project directory: 
+   ```
+   cd TeleParser
+   ```
 3. Create Python venv:
-   - on Windows: `python -m venv .`
-   - on Linux/macOS/other Unix-like OS: `$ python3 -m venv .`
+   - on Windows: 
+     ```
+     python -m venv .
+     ```
+   - on Linux/macOS/other Unix-like OS: 
+     ```
+     python3 -m venv .
+     ```
 4. Select project Python venv:
-   - on Windows: `.\Scripts\activate`
-   - on Linux/macOS/other Unix-like OS: `source bin/activate`
+   - on Windows: 
+     ```
+     .\Scripts\activate
+     ```
+   - on Linux/macOS/other Unix-like OS: 
+     ```
+     source bin/activate
+     ```
 5. Install dependencies:
-   - on Windows: `pip install -r .\requirements.txt`
-   - on Linux/macOS/other Unix-like OS: `pip3 install -r ./requirements.txt`
+   - on Windows: 
+     ```
+     pip install -r .\requirements.txt
+     ```
+   - on Linux/macOS/other Unix-like OS: 
+     ```
+     pip3 install -r ./requirements.txt
+     ```
 6. Get your own Telegram API token <a href='https://core.telegram.org/api#getting-started'>here</a>
 
 ### How to use
