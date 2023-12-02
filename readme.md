@@ -54,6 +54,7 @@ This is my project for parsing Telegram channels and chats and processing receiv
      ```
    - on Linux/macOS/other Unix-like OS: 
      ```
+     sed -i.bak 's/\r$//g' ./setup.sh
      ./setup.sh
      ```
 7. Get your own Telegram API token <a href='https://core.telegram.org/api#getting-started'>here</a>
