@@ -1,15 +1,13 @@
-<h1>
-TeleParser
-</h1>
+# TeleParser
 
 This is my project for parsing Telegram channels and chats and processing received data
 
-<h3>Requirements</h3>
+### Requirements
 1. Python `3.12.0` (CPython)
 2. MongoDB
 3. Your Telegram API token, learn more <a href='https://core.telegram.org/api#getting-started'>here</a>
 
-<h3>Get started</h3>
+### Get started
 1. Run <i>git clone</i>: `git clone https://github.com/artmih24/TeleParser.git`
 2. Go to project directory: `cd TeleParser`
 3. Create Python venv:
@@ -23,7 +21,7 @@ This is my project for parsing Telegram channels and chats and processing receiv
    - on Linux/macOS/other Unix-like OS: `pip3 install -r ./requirements.txt`
 6. Get your own Telegram API token <a href='https://core.telegram.org/api#getting-started'>here</a>
 
-<h3>How to use</h3>
+### How to use
 0. Make sure that:
    - You have received Your Telegram API token
    - And You have replaced contents in `config.ini` file by yor Telegram API token
@@ -35,5 +33,5 @@ This is my project for parsing Telegram channels and chats and processing receiv
 4. Wait until this script will parse and process al data and press Enter
 5. You can view all `.json` and `.csv` files with received data and view all data in MongoDB database
 
-<h3>WARNING</h3>
+### WARNING
 Don't give Your Telegram API token to anyone
