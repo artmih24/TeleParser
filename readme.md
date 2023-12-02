@@ -9,51 +9,51 @@ This is my project for parsing Telegram channels and chats and processing receiv
 
 ### Get started
 1. Run <i>git clone</i>: 
-   ```
+   ```cmd
    git clone https://github.com/artmih24/TeleParser.git
    ```
 2. Go to project directory: 
-   ```
+   ```shell
    cd TeleParser
    ```
 3. Create Python venv:
    - on Windows: 
-     ```
+     ```cmd
      python -m venv .
      ```
    - on Linux/macOS/other Unix-like OS: 
-     ```
+     ```shell
      python3 -m venv .
      ```
 4. Select project Python venv:
    - on Windows: 
-     ```
+     ```cmd
      .\Scripts\activate
      ```
    - on Linux/macOS/other Unix-like OS: 
-     ```
+     ```shell
      source ./bin/activate
      ```
 5. Install dependencies:
    - on Windows: 
-     ```
+     ```cmd
      pip install -r .\requirements.txt
      ```
    - on Linux/macOS/other Unix-like OS: 
-     ```
+     ```shell
      pip3 install -r ./requirements.txt
      ```
 6. You can use setup scripts:
    - on Windows: 
-     ```
+     ```cmd
      .\setup.cmd
      ```
      or
-     ```
+     ```bat
      .\setup.bat
      ```
    - on Linux/macOS/other Unix-like OS: 
-     ```
+     ```shell
      sed -i.bak 's/\r$//g' ./setup.sh
      ./setup.sh
      ```
@@ -65,11 +65,11 @@ This is my project for parsing Telegram channels and chats and processing receiv
    - And You have replaced contents in `config.ini` file by your Telegram API token
 1. Launch this script:
    - on Windows: 
-     ```
+     ```cmd
      python .\TeleParser.py
      ```
    - on Linux/macOS/other Unix-like OS: 
-     ```
+     ```shell
      python3 ./TeleParser.py
      ```
    - You can write channel or chat name (written after '@' or `t.me/`/`https://t.me/`) as command-line argument
