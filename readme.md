@@ -48,14 +48,14 @@ This is my project for parsing Telegram channels and chats and processing receiv
 ### How to use
 0. Make sure that:
    - You have received Your Telegram API token
-   - And You have replaced contents in `config.ini` file by yor Telegram API token
+   - And You have replaced contents in `config.ini` file by your Telegram API token
 1. Launch this script:
    - on Windows: `python .\TeleParser.py`
    - on Linux/macOS/other Unix-like OS: `python3 ./TeleParser.py`
 2. Login in Telegram if You weren't logged in (trust me, this script doesn't steal your Telegram token, login and password)
-3. Enter channel or chat name (written after '@' or `t.me/`/`https://t.me/`) and press Enter
-4. Wait until this script will parse and process al data and press Enter
+3. Enter channel or chat name (written after '@' or `t.me/`/`https://t.me/`) and press Enter key
+4. Wait until this script will parse and process al data and press Enter key
 5. You can view all `.json` and `.csv` files with received data and view all data in MongoDB database
 
 ### WARNING
-Don't give Your Telegram API token to anyone
+Don't give Your Telegram API token to anyone!
