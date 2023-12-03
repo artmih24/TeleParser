@@ -1,5 +1,5 @@
-pymorphy3
-pymorphy2
+pymorphy3; python_version >= '3.12'
+pymorphy2; python_version < '3.12'
 pandas
 nltk
 pymongo

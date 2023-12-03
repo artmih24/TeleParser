@@ -1,10 +1,12 @@
 **/Include/
 **/Lib/
 **/Scripts/
+**/bin/
 **/.idea/
 **/*.session*
 **/config.ini
 **/*.csv
 **/*.json
 **/pyvenv.cfg
+**/*.bak
 
