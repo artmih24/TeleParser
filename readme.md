@@ -2,6 +2,11 @@
 
 This is my project for parsing Telegram channels and chats and processing received data
 
+## ❗️ IMPORTANT
+Telegram has been updated API
+**DO NOT** use this project until I will update it!
+If You will try to use this project, **you can loose Your Telegram account!**
+
 ### Requirements
 1. Python `3.12.0` or earlier (CPython)
 2. MongoDB
@@ -83,3 +88,4 @@ This is my project for parsing Telegram channels and chats and processing receiv
 
 ### WARNING
 Don't give Your Telegram API token to anyone!
+
