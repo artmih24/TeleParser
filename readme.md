@@ -2,11 +2,6 @@
 
 This is my project for parsing Telegram channels and chats and processing received data
 
-## ❗️ IMPORTANT
-Telegram has been updated API<br>
-**DO NOT** use this project until I will update it!<br>
-If You will try to use this project, **You can loose Your Telegram account!**
-
 > [!IMPORTANT]
 >  Telegram has been updated API<br>
 >  **DO NOT** use this project until I will update it!<br>
